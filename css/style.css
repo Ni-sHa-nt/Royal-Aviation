@@ -96,6 +96,19 @@ a {
 }
 
 
+.title-2 {
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-family: var(--arlita-font);
+}
+
+.title-2 span {
+    color: var(--primary-color);
+}
+
+
 /* 
 ###########################################
 Bootstrap Classes 
@@ -237,12 +250,89 @@ Banner Section
 ###########################################
  */
 .perfect-day-sec {
-    min-height: 100vh;
-    border: 1px solid red;
+    /* min-height: 100vh; */
+    /* border: 1px solid red; */
+    padding: 150px 0;
+}
+
+.perfect-day-sec .bnt-border {
+    margin: 0 auto;
+}
+
+.perfect-day-sec .perfect-head {
+    text-align: center;
+}
+
+.perfect-day-sec .perfect-head .title-2 {
+    max-width: 901px;
+    margin: 60px auto 100px;
+}
+
+.video-wrapper {
+    max-width: 1204px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, transparent, #F1E28C, #110E03);
+    margin: 0 auto;
+    padding: 1px;
+    position: relative;
+}
+
+.video-wrapper .video-bg {
+    height: 100%;
+    background: #0F100E;
+    border-radius: 30px;
+    padding: 23px 26px;
 }
 
 
+.video-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
 
+
+.video-wrapper::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    border: 1px solid var(--text-color);
+    background: rgba(255, 255, 255, 10%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: wave 1s infinite ease-out;
+}
+
+.video-wrapper::after {
+    content: "";
+    width: 47px;
+    height: 52px;
+    position: absolute;
+    background: url("../assets/play-btn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@keyframes wave {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(2.2);
+        opacity: 0;
+    }
+}
 
 
 
@@ -303,7 +393,7 @@ Predestined Section
     background: linear-gradient(344deg, #F1E28C, #090601, #F1E28C);
     transform: translateX(-50%);
     left: 50%;
-    top: -26px;
+    top: -34px;
 }
 
 .testimonials-sub-title span {
@@ -548,6 +638,31 @@ Media Queries
         max-width: 100%;
 
     }
+
+    /* Perfect Day Section */
+    .video-wrapper::before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .video-wrapper::after {
+        /* content: ""; */
+        width: 30px;
+        height: 32px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    /* Perfect Day Section */
+    .perfect-day-sec .title-2 {
+        font-size: 40px;
+        margin: 38px auto 60px !important;
+    }
+
+    .perfect-day-sec {
+        padding-bottom: 60px;
+    }
 }
 
 
@@ -590,11 +705,55 @@ Media Queries
     }
 
     .testimonials-sub-title span {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .bnt-border>span {
-        font-size: 12px;
+        font-size: 16px;
+    }
+
+    .predestined-sec .secondary-btn {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+
+    .predestined-sec .secondary-btn span {
+        padding: 15px 19px;
+    }
+
+    .predestined-sec .secondary-btn span svg {
+        width: 20px;
+        height: 15px;
+    }
+
+    .secondary-btn svg {
+        margin-left: 15px;
+    }
+
+    .testimonials-cntn {
+        padding-bottom: 60px;
+    }
+
+    /* Perfect Day Section */
+    .video-wrapper .video-bg {
+        padding: 10px 12px;
+    }
+
+    .video-wrapper::before {
+        width: 30px;
+        height: 30px;
+    }
+
+    .video-wrapper::after {
+        /* content: ""; */
+        width: 15px;
+        height: 16px;
+    }
+
+    /* Perfect Day Section */
+    .perfect-day-sec .title-2 {
+        font-size: 30px;
     }
 
 }
