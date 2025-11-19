@@ -500,7 +500,7 @@ Predestined Section
     color: var(--text-color);
     background: #100e07;
     border-radius: 15px;
-    padding: 18px 20px 17px 30px;
+    padding: 18px 20px;
     border: 1px solid rgba(241, 226, 140, 20%);
     margin-bottom: 20px;
 
@@ -668,12 +668,12 @@ Media Queries
     }
 
     .perfect-day-sec {
-        padding: 90px 0;
+        padding: 60px 0;
     }
 
     /* Predestined Section */
     .predestined-sec {
-        padding: 90px 0;
+        padding: 60px 0;
     }
 }
 
