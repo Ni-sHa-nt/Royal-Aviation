@@ -120,6 +120,7 @@ Bootstrap Classes
 
 
 
+
 /* 
 ###########################################
 Navbar Section 
@@ -615,6 +616,18 @@ Media Queries
  */
 @media screen and (max-width:992px) {
 
+    /* Perfect Day Section */
+    .video-wrapper::before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .video-wrapper::after {
+        /* content: ""; */
+        width: 30px;
+        height: 32px;
+    }
+
     /* Predestined Section */
     .testimonials-img {
         margin: 0 auto 100px;
@@ -638,21 +651,15 @@ Media Queries
         max-width: 100%;
 
     }
-
-    /* Perfect Day Section */
-    .video-wrapper::before {
-        width: 60px;
-        height: 60px;
-    }
-
-    .video-wrapper::after {
-        /* content: ""; */
-        width: 30px;
-        height: 32px;
-    }
 }
 
 @media screen and (max-width:768px) {
+
+    /* Navbar Section  */
+    .navbar-brand {
+        width: 70px;
+    }
+
 
     /* Perfect Day Section */
     .perfect-day-sec .title-2 {
@@ -661,12 +668,60 @@ Media Queries
     }
 
     .perfect-day-sec {
-        padding-bottom: 60px;
+        padding: 90px 0;
+    }
+
+    /* Predestined Section */
+    .predestined-sec {
+        padding: 90px 0;
     }
 }
 
 
 @media screen and (max-width:576px) {
+
+    /* Navbar Section  */
+    .title-1 {
+        font-size: 50px;
+        max-width: 100%;
+    }
+
+    .banner-wrapper p {
+        max-width: 100%;
+    }
+
+    .primary-btn {
+        padding: 16px 24px;
+        font-size: 18px;
+    }
+
+    .banner-btn svg {
+        width: 20px;
+        height: 19px;
+    }
+
+
+    /* Perfect Day Section */
+    .video-wrapper .video-bg {
+        padding: 10px 12px;
+    }
+
+    .video-wrapper::before {
+        width: 30px;
+        height: 30px;
+    }
+
+    .video-wrapper::after {
+        /* content: ""; */
+        width: 15px;
+        height: 16px;
+    }
+
+    /* Perfect Day Section */
+    .perfect-day-sec .title-2 {
+        font-size: 30px;
+    }
+
 
     /* Predestined Section */
     .testimonials-card {
@@ -735,31 +790,33 @@ Media Queries
         padding-bottom: 60px;
     }
 
-    /* Perfect Day Section */
-    .video-wrapper .video-bg {
-        padding: 10px 12px;
-    }
-
-    .video-wrapper::before {
-        width: 30px;
-        height: 30px;
-    }
-
-    .video-wrapper::after {
-        /* content: ""; */
-        width: 15px;
-        height: 16px;
-    }
-
-    /* Perfect Day Section */
-    .perfect-day-sec .title-2 {
-        font-size: 30px;
-    }
-
 }
 
 
 @media screen and (max-width:425px) {
+
+    /* Navbar Section  */
+    .title-1 {
+        font-size: 36px;
+    }
+
+    .banner-wrapper p {
+        font-size: 18px;
+    }
+
+    .primary-btn {
+        padding: 16px 24px;
+        font-size: 15px;
+    }
+
+    .banner-btn svg {
+        width: 17px;
+        height: 19px;
+    }
+
+    .banner-btn svg {
+        margin-left: 10px;
+    }
 
     /* Predestined Section */
     .client-details-wrapper {
