@@ -47,6 +47,35 @@ a {
     background: rgba(8, 8, 8, 48%);
 }
 
+
+.secondary-btn {
+    color: var(--text-color);
+    font-family: var(--arlita-font);
+    background: linear-gradient(331deg, #F1E28C, #090601, #F1E28C);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50px;
+    padding: 1px;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: var(--arlita-font);
+    margin-top: 70px;
+
+}
+
+.secondary-btn span {
+    padding: 21px 35px;
+    border-radius: 50px;
+    display: inline-block;
+    color: var(--text-color);
+    background: var(--bg-dark);
+}
+
+.secondary-btn svg {
+    margin-left: 21px;
+}
+
 .bnt-border {
     background: linear-gradient(344deg, #F1E28C, #090601, #F1E28C);
     width: fit-content;
@@ -451,6 +480,10 @@ Predestined Section
 }
 
 
+.testimonial-btn {
+    text-align: center;
+}
+
 
 
 
@@ -506,6 +539,15 @@ Media Queries
     .inner-wrapper p {
         max-width: 100%;
     }
+
+    .testimonials-cntn .bnt-border {
+        margin: 0 auto;
+    }
+
+    .testimonials-cntn .title-2 {
+        max-width: 100%;
+
+    }
 }
 
 
@@ -547,6 +589,14 @@ Media Queries
         margin-top: 3px;
     }
 
+    .testimonials-sub-title span {
+        font-size: 14px;
+    }
+
+    .bnt-border>span {
+        font-size: 12px;
+    }
+
 }
 
 
@@ -562,4 +612,6 @@ Media Queries
         text-align: center;
         margin-left: 0px;
     }
+
+
 }
