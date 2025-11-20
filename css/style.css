@@ -45,7 +45,20 @@ a {
     color: var(--primary-color);
     font-family: var(--arlita-font);
     background: rgba(8, 8, 8, 48%);
+    transition: all 2s linear;
 }
+
+.primary-btn:hover {
+    background: var(--primary-color);
+    border: 2px solid transparent;
+    color: var(--bg-dark);
+}
+
+
+.primary-btn:hover svg {
+    stroke: var(--bg-dark);
+}
+
 
 
 .secondary-btn {
@@ -62,6 +75,11 @@ a {
     font-family: var(--arlita-font);
     margin-top: 70px;
 
+}
+
+.secondary-btn:hover {
+    background-size: 300%;
+    animation: moveGradient 3s linear infinite;
 }
 
 .secondary-btn span {
@@ -82,6 +100,18 @@ a {
     height: fit-content;
     border-radius: 16px;
     padding: 1px;
+    background-size: 300%;
+    animation: moveGradient 3s linear infinite;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .bnt-border>span {
@@ -135,6 +165,7 @@ Navbar Section
     transition: 0.3s linear;
 }
 
+
 .nav-link:hover::before,
 .active::before {
     content: "";
@@ -145,6 +176,7 @@ Navbar Section
     left: 0;
     position: absolute;
 }
+
 
 .nav-link:hover::after,
 .active::after {
@@ -276,6 +308,22 @@ Banner Section
     margin: 0 auto;
     padding: 1px;
     position: relative;
+    background-size: 300% 300%;
+    animation: movingGradient 3s linear infinite;
+}
+
+@keyframes movingGradient {
+    0% {
+        background-position: 50% 0%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 50% 0%;
+    }
 }
 
 .video-wrapper .video-bg {
@@ -395,6 +443,8 @@ Predestined Section
     transform: translateX(-50%);
     left: 50%;
     top: -34px;
+    background-size: 300%;
+    animation: moveGradient 3s linear infinite;
 }
 
 .testimonials-sub-title span {
@@ -453,6 +503,11 @@ Predestined Section
     border-radius: 10px;
     background-color: #0F0F0C;
     position: relative;
+    transition: 0.3s linear;
+}
+
+.testimonials-card:hover {
+    box-shadow: 0px 0px 12px #e4d89c;
 }
 
 .testimonials-card::after {
@@ -463,9 +518,12 @@ Predestined Section
     position: absolute;
     top: -25px;
     right: -25px;
+    transition: 0.3s linear;
+    filter: drop-shadow(0px 0px 20px #F1E28C);
 }
 
-.testimonials-card::before {
+
+/* .testimonials-card::before {
     content: "";
     width: 50px;
     height: 50px;
@@ -474,8 +532,9 @@ Predestined Section
     top: -25px;
     right: -25px;
     filter: blur(30px);
-    /* opacity: 65%; */
-}
+} */
+
+
 
 .testimonials-card div {
     margin-left: 20px;
@@ -503,7 +562,12 @@ Predestined Section
     padding: 18px 20px;
     border: 1px solid rgba(241, 226, 140, 20%);
     margin-bottom: 20px;
+    transition: 0.3s linear;
 
+}
+
+.client-card:hover {
+    box-shadow: 0px 0px 12px #e4d89c;
 }
 
 
