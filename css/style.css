@@ -36,6 +36,17 @@ a {
     text-decoration: none;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.col-50 {
+    width: 50%;
+    padding: 0 12px;
+}
+
 .primary-btn {
     padding: 21px 31px;
     border: 2px solid var(--text-color);
@@ -94,13 +105,14 @@ a {
     margin-left: 21px;
 }
 
-.bnt-border {
+.btn-border {
     background: linear-gradient(344deg, #F1E28C, #090601, #F1E28C);
     width: fit-content;
     height: fit-content;
     border-radius: 16px;
     padding: 1px;
     background-size: 300%;
+    text-transform: capitalize;
     animation: moveGradient 3s linear infinite;
 }
 
@@ -114,7 +126,7 @@ a {
     }
 }
 
-.bnt-border>span {
+.btn-border>span {
     padding: 14px 58px;
     border-radius: 16px;
     display: inline-block;
@@ -123,6 +135,7 @@ a {
     font-size: 25px;
     font-weight: 400;
     font-family: var(--ClashGrotest);
+    text-wrap: nowrap;
 }
 
 
@@ -166,7 +179,9 @@ Navbar Section
 }
 
 
-.nav-link:hover::before,
+
+
+.nav-link::before,
 .active::before {
     content: "";
     background: url("../assets/nav-hover-img-01.png");
@@ -175,10 +190,12 @@ Navbar Section
     top: 9;
     left: 0;
     position: absolute;
+    transition: 0.5s linear;
+    opacity: 0;
 }
 
 
-.nav-link:hover::after,
+.nav-link::after,
 .active::after {
     content: "";
     background: url("../assets/nav-hover-img-02.png");
@@ -187,7 +204,18 @@ Navbar Section
     bottom: 9px;
     right: 0;
     position: absolute;
+    transition: 0.5s linear;
+    opacity: 0;
 }
+
+.nav-link:hover::after,
+.nav-link:hover::before,
+.active::after,
+.active::before {
+    opacity: 1;
+}
+
+
 
 
 
@@ -198,6 +226,10 @@ Navbar Section
 
 .nav-item {
     margin-right: 60px;
+}
+
+li:last-child {
+    margin: 0;
 }
 
 .navbar-brand {
@@ -238,6 +270,7 @@ Banner Section
     position: relative;
     -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    /* background-attachment: fixed; */
 }
 
 .title-1 {
@@ -283,12 +316,10 @@ Banner Section
 ###########################################
  */
 .perfect-day-sec {
-    /* min-height: 100vh; */
-    /* border: 1px solid red; */
-    padding: 150px 0;
+    padding: 135px 0;
 }
 
-.perfect-day-sec .bnt-border {
+.perfect-day-sec .btn-border {
     margin: 0 auto;
 }
 
@@ -386,6 +417,258 @@ Banner Section
 
 
 
+
+/*  
+###########################################
+Dream Come Section 
+###########################################
+*/
+.dream-come-sec {
+    padding: 135px 0;
+}
+
+.section-head {
+    display: flex;
+    align-items: center;
+}
+
+.sub-title {
+    margin: 0 auto;
+}
+
+.left-line {
+    max-width: 793px;
+    margin-right: 6px;
+}
+
+.left-line img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-line {
+    max-width: 793px;
+    margin-left: 6px;
+}
+
+.right-line img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-head {
+    text-align: center;
+    /* margin-top: 15px; */
+    margin: 15px 0 96px;
+}
+
+.dream-come-sec .title-2 {
+    max-width: 879px;
+    margin: 0 auto;
+}
+
+.main-head p {
+    max-width: 479px;
+    margin: 6px auto 0;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.44px;
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-family: var(--ClashGrotest);
+}
+
+.card {
+    background: transparent;
+    max-width: 451px;
+    max-height: 554px;
+    border-radius: 26px;
+    position: relative;
+    transition: transform 0.3s ease;
+    margin: 0 auto 190px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.card-img {
+    border-radius: 26px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 26px;
+}
+
+.card-content {
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+
+}
+
+.card-content svg {
+    width: 100%;
+    height: 100%;
+}
+
+.card-content-text {
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.card-content-text .title-3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-family: var(--arlita-font);
+}
+
+
+.card-content-text p {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.44px;
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-family: var(--ClashGrotest);
+}
+
+.card-btn {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+.card-btn .secondary-btn span {
+    font-size: 20px;
+    padding: 6px 16px;
+}
+
+.card-btn .secondary-btn span svg {
+    width: 22px;
+    margin-left: 12px;
+}
+
+.explore-more-bnt {
+    text-align: center;
+}
+
+
+
+
+
+/* 
+###########################################
+Service Section  
+###########################################
+*/
+.service-sec {
+    padding: 135px 0 20px;
+}
+
+
+.service-sec .main-head {
+    margin: 43px 0 60px;
+}
+
+
+.service-sec .main-head .main-head-para {
+    max-width: 639px;
+}
+
+.service-card {
+    /* padding: 74px 80px; */
+    padding: 38px 47px;
+    /* border-radius: 70px; */
+    color: var(--text-color);
+    margin-bottom: 40px;
+    background: var(--bg-body);
+    border: 1px solid rgba(241, 226, 140, 20%);
+}
+
+
+.service-card-img {
+    max-width: 673px;
+}
+
+.service-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 34px;
+}
+
+
+.service-card .btn-border span {
+    padding: 7px 42px;
+    font-size: 18px;
+}
+
+.service-card .title-3 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    /* line-height: calc(108.5/50); */
+    font-family: var(--arlita-font);
+    margin: 43px 0 8px;
+}
+
+
+.service-card .title-3 span {
+    color: var(--primary-color);
+}
+
+
+
+.service-card p {
+    max-width: 540px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.44px;
+    text-transform: capitalize;
+    font-family: var(--ClashGrotest);
+}
+
+.service-card .secondary-btn {
+    margin-top: 54px;
+}
+
+.service-card .secondary-btn span {
+    padding: 16px 26px;
+    font-size: 22px;
+}
+
+.service-card {
+    position: sticky;
+    top: 50px;
+}
+
+.service-card::before {
+    content: "";
+    width: 155px;
+    height: 4px;
+    top: 0;
+    background: #F1E28C;
+    box-shadow: 0 0 10px #F1E28C;
+    position: absolute;
+}
+
+
+
+
+
 /* 
 ###########################################
 Predestined Section
@@ -459,7 +742,7 @@ Predestined Section
 }
 
 
-.testimonials-cntn .col-6 .bnt-border span {
+.testimonials-cntn .col-6 .btn-border span {
     padding: 10px 42.5px;
     font-size: 20px;
 }
@@ -678,6 +961,7 @@ Predestined Section
 Media Queries
 ###########################################
  */
+
 @media screen and (max-width:992px) {
 
     /* Perfect Day Section */
@@ -707,7 +991,7 @@ Media Queries
         max-width: 100%;
     }
 
-    .testimonials-cntn .bnt-border {
+    .testimonials-cntn .btn-border {
         margin: 0 auto;
     }
 
@@ -715,6 +999,12 @@ Media Queries
         max-width: 100%;
 
     }
+
+    /* Service Section  */
+    .service-card-img {
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -733,6 +1023,21 @@ Media Queries
 
     .perfect-day-sec {
         padding: 60px 0;
+    }
+
+    /*  Dream Come Section */
+    .dream-come-sec .title-2 {
+        font-size: 40px;
+    }
+
+
+    /* Service Section  */
+    .service-sec .title-2 {
+        font-size: 40px;
+    }
+
+    .main-head-para {
+        font-size: 16px !important;
     }
 
     /* Predestined Section */
@@ -786,6 +1091,61 @@ Media Queries
         font-size: 30px;
     }
 
+    /* dream-come-sec */
+    .main-head {
+        margin: 33px 0 58px;
+    }
+
+    .dream-come-sec .title-2 {
+        font-size: 30px;
+    }
+
+    .main-head p {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+
+    /* Service Section  */
+    .service-sec .title-2 {
+        font-size: 36px;
+    }
+
+    .main-head-para {
+        font-size: 12px !important;
+    }
+
+    .service-card .title-3 {
+        font-size: 32px;
+    }
+
+    .service-card p {
+        font-size: 13px;
+    }
+
+    .service-card .secondary-btn span {
+        padding: 16px 26px;
+        font-size: 16px;
+    }
+
+    .service-card .secondary-btn span svg {
+        width: 20px;
+    }
+
+    .service-card .secondary-btn {
+        margin-top: 24px;
+    }
+
+    .service-card::before {
+        content: "";
+        width: 53px;
+    }
+
+    .service-sec {
+        padding: 30px 0;
+    }
+
+
 
     /* Predestined Section */
     .testimonials-card {
@@ -827,7 +1187,7 @@ Media Queries
         font-size: 18px;
     }
 
-    .bnt-border>span {
+    .btn-border>span {
         font-size: 16px;
     }
 
@@ -881,6 +1241,65 @@ Media Queries
     .banner-btn svg {
         margin-left: 10px;
     }
+
+
+    /* Perfect Day Section */
+    .dream-come-sec .card {
+        max-width: 296px;
+    }
+
+    .card-content-text .title-3 {
+        font-size: 23px;
+        margin-bottom: 0;
+    }
+
+    .card-content-text p {
+        font-size: 14px;
+    }
+
+    .card-btn .secondary-btn span {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .dream-come-sec .secondary-btn {
+        font-size: 16px;
+    }
+
+    .dream-come-sec .card-btn .secondary-btn span svg {
+        width: 13px;
+        margin-left: 12px;
+    }
+
+
+    /* Service Section  */
+    .service-sec .title-2 {
+        font-size: 25px;
+    }
+
+    .service-card .btn-border span {
+        padding: 7px 31px;
+        font-size: 16px;
+    }
+
+    .service-card .title-3 {
+        font-size: 28px;
+    }
+
+    .service-card .secondary-btn span {
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+
+    .service-card .secondary-btn span svg {
+        width: 16px;
+    }
+
+    .service-card {
+        padding: 38px 30px;
+    }
+
+
 
     /* Predestined Section */
     .client-details-wrapper {
