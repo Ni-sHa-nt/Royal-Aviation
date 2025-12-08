@@ -182,7 +182,6 @@ Navbar Section
 
 
 
-
 .nav-link::before,
 .active::before {
     content: "";
@@ -219,8 +218,6 @@ Navbar Section
 
 
 
-
-
 .nav-link:hover,
 .active {
     color: var(--primary-color) !important;
@@ -253,6 +250,13 @@ li:last-child {
     margin-left: 44px;
 }
 
+.header-sec {
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background: var(--bg-body);
+}
+
 
 
 
@@ -272,7 +276,7 @@ Banner Section
     position: relative;
     -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 }
 
 .title-1 {
@@ -462,8 +466,7 @@ Dream Come Section
 
 .main-head {
     text-align: center;
-    /* margin-top: 15px; */
-    margin: 15px 0 96px;
+    margin: 25px 0 96px;
 }
 
 .dream-come-sec .title-2 {
@@ -593,7 +596,7 @@ Service Section
 ###########################################
 */
 .service-sec {
-    padding: 135px 0 20px;
+    padding: 135px 0;
 }
 
 
@@ -950,35 +953,19 @@ Predestined Section
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
 ###########################################
 Media Queries
 ###########################################
  */
+
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+
+    /* Dream Come Section */
+    .dream_row .col-xl-4 {
+        width: 50% !important;
+    }
+}
 
 @media screen and (max-width:992px) {
 
@@ -1044,8 +1031,22 @@ Media Queries
     }
 
 
+    /* Dream Come Section */
+    .dream-come-sec {
+        padding: 60px 0;
+    }
+
+    .main-head .title-2 {
+        font-size: 40px;
+    }
+
+
 
     /* Service Section  */
+    .service-sec {
+        padding: 60px 0;
+    }
+
     .service-sec .title-2 {
         font-size: 40px;
     }
@@ -1059,7 +1060,6 @@ Media Queries
         padding: 60px 0;
     }
 }
-
 
 @media screen and (max-width:576px) {
 
@@ -1100,11 +1100,20 @@ Media Queries
         height: 16px;
     }
 
-    /* Perfect Day Section */
     .perfect-day-sec .title-2 {
         font-size: 30px;
     }
 
+
+    /* Dream Come Section */
+    .card-explore-btn .secondary-btn {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .card-explore-btn .secondary-btn svg {
+        width: 18px;
+    }
 
 
 
@@ -1143,9 +1152,6 @@ Media Queries
         width: 53px;
     }
 
-    .service-sec {
-        padding: 30px 0;
-    }
 
 
 
@@ -1218,6 +1224,65 @@ Media Queries
 
 }
 
+@media screen and (max-width: 490px) {
+
+    /* Dream Come Section */
+    .card {
+        width: 295px;
+        margin-bottom: 0;
+    }
+
+    .card-img {
+        width: 295px;
+    }
+
+    .card img {
+        height: 260px;
+    }
+
+    .card-content {
+        width: 296px;
+    }
+
+    .card-txt .title-3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .card-txt p {
+        font-size: 12px;
+    }
+
+    .card-btn span {
+        font-size: 12px;
+    }
+
+    .card-btn span svg {
+        width: 15px;
+    }
+
+    .card-btn span {
+        padding: 10px 18px;
+    }
+
+    .main-head .title-2 {
+        font-size: 30px;
+    }
+
+    .dream-come-sec .main-head p {
+        font-size: 16px;
+    }
+
+    .dream-come-sec .main-head {
+        text-align: center;
+        margin: 25px 0 55px;
+    }
+
+    .dream-come-sec .secondary-btn span {
+        padding: 15px 16px;
+    }
+}
+
 
 @media screen and (max-width:425px) {
 
@@ -1243,8 +1308,6 @@ Media Queries
     .banner-btn svg {
         margin-left: 10px;
     }
-
-
 
 
 
@@ -1288,54 +1351,4 @@ Media Queries
         margin-left: 0px;
     }
 
-}
-
-@media screen and (max-width: 490px) {
-
-    /* Dream Come Section */
-    .card {
-        width: 295px;
-        margin-bottom: 0;
-    }
-
-    .card-img {
-        width: 295px;
-    }
-
-    .card img {
-        height: 260px;
-    }
-
-    .card-content {
-        width: 296px;
-    }
-
-    .card-txt .title-3 {
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
-
-    .card-txt p {
-        font-size: 12px;
-    }
-
-    .card-btn span {
-        font-size: 12px;
-    }
-
-    .card-btn span svg {
-        width: 15px;
-    }
-
-    .card-btn span {
-        padding: 10px 18px;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1440px) {
-
-    /* Dream Come Section */
-    .dream_row .col-xl-4 {
-        width: 50% !important;
-    }
 }
