@@ -24,7 +24,12 @@
 }
 
 body {
-    background: var(--bg-body);
+    /* background: var(--bg-body); */
+    background: url("../assets/body-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: darken;
 }
 
 
@@ -182,8 +187,7 @@ Navbar Section
 
 
 
-.nav-link::before,
-.active::before {
+.nav-link::before {
     content: "";
     background: url("../assets/nav-hover-img-01.png");
     width: 17px;
@@ -196,8 +200,7 @@ Navbar Section
 }
 
 
-.nav-link::after,
-.active::after {
+.nav-link::after {
     content: "";
     background: url("../assets/nav-hover-img-02.png");
     width: 17px;
@@ -255,6 +258,11 @@ li:last-child {
     top: 0px;
     z-index: 999;
     background: var(--bg-body);
+}
+
+
+.offcanvas {
+    flex-direction: row;
 }
 
 
@@ -318,7 +326,7 @@ Banner Section
 
 /*
 ###########################################
- Perfect Day Section
+Perfect Day Section
 ###########################################
  */
 .perfect-day-sec {
@@ -696,13 +704,13 @@ Predestined Section
 ###########################################
  */
 .predestined-sec {
-    background: url("../assets/body-bg.png");
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: cover;
+    /* background: url("../assets/body-bg.png"); */
+    /* background-repeat: repeat-y; */
+    /* background-position: center; */
+    /* background-size: cover; */
     position: relative;
-    background-color: rgba(0, 0, 0, 0.9);
-    background-blend-mode: darken;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    /* background-blend-mode: darken; */
     overflow: hidden;
     padding: 135px 0;
 }
@@ -967,6 +975,87 @@ Media Queries
     }
 }
 
+@media screen and (max-width:1200px) {
+    .offcanvas {
+        flex-direction: column;
+        padding-top: 150px;
+        backdrop-filter: blur(16px);
+        background: #00000033 !important;
+    }
+
+    .navbar-toggler {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 9999;
+    }
+
+    .navbar-toggler-icon {
+        background: none;
+        width: 30px;
+        height: 2px;
+        background: var(--primary-color);
+        transition: 0.5s linear;
+    }
+
+    .nav-item {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-btn {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+
+    .navbar-toggler::after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background: var(--primary-color);
+        position: absolute;
+        top: -4px;
+        transition: 0.5s linear;
+    }
+
+    .navbar-toggler::before {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background: var(--primary-color);
+        position: absolute;
+        bottom: -4px;
+        transition: 0.5s linear;
+    }
+
+    .navbar-toggler.active {
+        color: transparent !important;
+    }
+
+    .navbar-toggler.active>.navbar-toggler-icon {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+
+    .navbar-toggler.active::before {
+        transform: translate(3px, -6px) rotate(45deg);
+    }
+
+    .navbar-toggler.active::after {
+        transform: translate(5px, 5px) rotate(-45deg);
+    }
+
+    .offcanvas .nav-link::after,
+    .offcanvas .nav-link::before {
+        display: none;
+    }
+
+
+}
+
+
+
 @media screen and (max-width:992px) {
 
     /* Perfect Day Section */
@@ -1009,7 +1098,6 @@ Media Queries
     .service-card-img {
         max-width: 100%;
     }
-
 }
 
 @media screen and (max-width:768px) {
