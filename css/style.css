@@ -43,6 +43,7 @@ a {
     text-decoration: none;
 }
 
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -230,7 +231,7 @@ Navbar Section
     margin-right: 60px;
 }
 
-li:last-child {
+.li:last-child {
     margin: 0;
 }
 
@@ -719,7 +720,7 @@ Predestined Section
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, #000000, transparent, transparent, #000000);
+    /* background: linear-gradient(to top, #000000, transparent, transparent, #000000); */
     z-index: 1;
 }
 
@@ -954,6 +955,237 @@ Predestined Section
 
 
 
+/* 
+###########################################
+Footer Section
+###########################################
+ */
+.footer-sec {
+    padding: 66px 20 0;
+    background: var(--bg-body);
+    border: 1px solid #524B26;
+}
+
+.footer-sec ul {
+    padding-left: 0;
+    margin-bottom: 0px;
+}
+
+.footer-sec ul a {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-family: var(--ClashGrotest);
+    transition: 0.2s linear;
+}
+
+.footer-sec ul a:hover {
+    color: var(--primary-color);
+}
+
+.footer-logo a {
+    width: 169px;
+}
+
+.footer-logo a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.company-about-para {
+    /* max-width: 468px; */
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-family: var(--ClashGrotest);
+    /* margin: 40px 0 37px */
+    margin: 30px 0 50px
+}
+
+
+.footer-contact li span img {
+    width: 28px;
+    height: 26px;
+    object-fit: cover;
+}
+
+.footer-contact {
+    padding: 0;
+}
+
+.footer-contact li a {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--text-color);
+    font-family: var(--ClashGrotest);
+    margin-left: 5px;
+}
+
+
+.our-service-list li {
+    margin-bottom: 20px;
+}
+
+.our-service-list li:last-child {
+    margin-bottom: 0px;
+}
+
+.latest-update-wrapper p {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 23px;
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-family: var(--ClashGrotest);
+}
+
+.latest-update-wrapper .subscribe-box {
+    width: 100%;
+    /* max-width: 402px; */
+}
+
+.subscribe-box input {
+    flex: 1;
+    min-width: 0;
+}
+
+.subscribe-box form {
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 6px 6px 6px 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.subscribe-box form #email {
+    background: transparent !important;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-color);
+    font-family: var(--primary-color);
+}
+
+.subscribe-box input::placeholder {
+    color: var(--text-color);
+}
+
+.subscribe-box button {
+    padding: 9px 13.5px;
+    background: var(--primary-color);
+    border-radius: 16px;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    white-space: nowrap;
+    font-family: var(--ClashGrotest);
+}
+
+
+.social-media-links {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 100px 0 38px !important;
+}
+
+.social-media-links li a {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s linear;
+}
+
+.social-media-list {
+    margin-right: 12px;
+}
+
+.social-media-links li a:hover {
+    box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color);
+}
+
+.country-links ul li {
+    margin-right: 20px;
+}
+
+.country-links ul li:last-child {
+    margin: 0;
+}
+
+.country-links ul li a {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: var(--ClashGrotest);
+}
+
+.country-links .divider {
+    position: relative;
+}
+
+.country-links .divider::after {
+    content: "";
+    width: 2px;
+    height: 20px;
+    top: 23%;
+    left: -10px;
+    position: absolute;
+    background: var(--primary-color);
+
+}
+
+.line {
+    /* border: none; */
+    width: 100%;
+    height: 2px;
+    background: #F1E28C;
+    margin: 50px 0 0px;
+}
+
+.footer-sec .copy-right-content {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-transform: capitalize;
+    display: flex;
+    padding: 30px 0 50px;
+    font-family: var(--ClashGrotest);
+}
+
+.footer-sec .copy-right-content a {
+    color: var(--text-color);
+    transition: 0.3s linear;
+}
+
+.footer-sec .copy-right-content a:hover {
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1052,8 +1284,22 @@ Media Queries
     }
 
 
-}
+    /* footer-sec */
+    .latest-update-wrapper .subscribe-box {
+        max-width: 402px;
+    }
 
+    .social-media-links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 55px 0 38px !important;
+    }
+
+    .country-links ul {
+        justify-content: flex-start !important;
+    }
+}
 
 
 @media screen and (max-width:992px) {
@@ -1097,6 +1343,14 @@ Media Queries
     /* Service Section  */
     .service-card-img {
         max-width: 100%;
+    }
+
+
+    /* footer-sec */
+
+    .footer-sec .copy-right-content {
+        font-size: 18px;
+        text-align: center;
     }
 }
 
@@ -1146,6 +1400,47 @@ Media Queries
     /* Predestined Section */
     .predestined-sec {
         padding: 60px 0;
+    }
+
+    /* footer-sec */
+    .footer-logo a {
+        width: 140px;
+    }
+
+    .company-about-para {
+        /* max-width: 468px; */
+        font-size: 18px;
+        margin: 30px 0 25px;
+    }
+
+    .footer-contact li a {
+        font-size: 20px;
+    }
+
+    .footer-sec ul a {
+        font-size: 20px;
+    }
+
+    .our-service-list li {
+        margin-bottom: 14px;
+    }
+
+    .social-media-links {
+        margin: 30px 0 30px !important;
+    }
+
+    .country-links ul li a {
+        font-size: 20px;
+    }
+
+    .country-links .divider::after {
+        content: "";
+        width: 2px;
+        height: 20px;
+        top: 15%;
+        left: -10px;
+        position: absolute;
+        background: var(--primary-color);
     }
 }
 
