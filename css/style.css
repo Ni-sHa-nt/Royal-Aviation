@@ -1003,15 +1003,16 @@ Predestined Section
     font-family: var(--ClashGrotest);
 }
 
-.uerInput {
+.userInput {
     padding: 12px 44px 64px;
     border-radius: 50px;
     border: 2px solid #27220D;
     margin-top: 67px;
     background: var(--bg-body);
+    box-shadow: 0px 0px 119.5px -73px #cab83fa3;
 }
 
-.registration-sec .uerInput img {
+.registration-sec .userInput img {
     width: 206px;
     height: 35px;
     object-fit: cover;
@@ -1038,7 +1039,7 @@ Predestined Section
     color: var(--primary-color);
 }
 
-.uerInput label {
+.userInput label {
     display: block;
     font-size: 20px;
     font-weight: 500;
@@ -1047,7 +1048,7 @@ Predestined Section
     font-family: var(--ClashGrotest);
 }
 
-.uerInput input {
+.userInput input {
     margin-bottom: 31px;
     width: 100%;
     background: transparent;
@@ -1059,16 +1060,41 @@ Predestined Section
     cursor: pointer;
 }
 
-.uerInput input:hover {
+.userInput input:hover {
     box-shadow: 0 0px 24px #ddca6769
 }
 
-input::placeholder {
+.userInput input::placeholder {
     font-size: 16px;
     font-weight: 400;
     color: var(--text-color);
     font-family: var(--ClashGrotest);
 }
+
+.userInput .secondary-btn {
+    margin-top: 50px;
+    position: relative;
+}
+
+.subscribe-btn {
+    text-align: center;
+}
+
+.userInput .secondary-btn::after {
+    content: "";
+    background: url("../assets/btn-decorative-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45.63px;
+    height: 77.43px;
+    position: absolute;
+    bottom: -15px;
+}
+
+
+
+
 
 /* 
 ###########################################
@@ -1520,6 +1546,26 @@ Media Queries
     .predestined-sec {
         padding: 60px 0;
     }
+
+
+    /* Registration Section */
+    .register-head .title-2 {
+        font-size: 40px;
+    }
+
+    .register-head .title-2 span {
+        font-size: 160px;
+    }
+
+    .register-head p {
+        max-width: 100%;
+        font-size: 20px;
+    }
+
+    .form-head p {
+        font-size: 28px;
+    }
+
 
     /* footer-sec */
     .footer-logo a {
