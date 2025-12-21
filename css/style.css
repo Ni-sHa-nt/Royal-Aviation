@@ -1428,6 +1428,11 @@ Media Queries
         display: none;
     }
 
+    /* Registration Section */
+    .form-head p {
+        max-width: 100%;
+    }
+
 
     /* footer-sec */
     .latest-update-wrapper .subscribe-box {
@@ -1770,6 +1775,64 @@ Media Queries
         padding-bottom: 60px;
     }
 
+
+    /* Registration Section */
+    .registration-sec {
+        padding: 60px 0;
+    }
+
+    .register-head .sub-title span {
+        padding: 7px 20px;
+        font-size: 12px;
+    }
+
+    .register-head .title-2 {
+        font-size: 30px;
+    }
+
+    .register-head .title-2 span {
+        font-size: 90px;
+    }
+
+    .register-head p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .form-head p {
+        font-size: 24px;
+    }
+
+    .userInput input {
+        margin-bottom: 22px;
+        padding: 12px 20px;
+    }
+
+    .userInput label {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .subscribe-btn .secondary-btn {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    .subscribe-btn .secondary-btn span {
+        padding: 14px 25px;
+    }
+
+    .subscribe-btn .secondary-btn span svg {
+        width: 18px;
+    }
+
+    .userInput .secondary-btn::after {
+        content: "";
+        width: 36.63px;
+        height: 55.43px;
+    }
+
+
     /* footer-sec */
     .footer-sec .copy-right-content {
         padding: 18px 0 18px;
@@ -1837,6 +1900,15 @@ Media Queries
 
     .dream-come-sec .secondary-btn span {
         padding: 15px 16px;
+    }
+
+    /* Registration Section */
+    .form-head p {
+        font-size: 18px;
+    }
+
+    .subscribe-btn .secondary-btn {
+        margin-top: 28px;
     }
 }
 
@@ -1907,6 +1979,12 @@ Media Queries
         text-align: center;
         margin-left: 0px;
     }
+
+    /* Registration Section */
+    .form-head p {
+        font-size: 15px;
+    }
+
 
     /* footer-sec */
     .footer-sec .latest-update-wrapper .country-links ul li a {
