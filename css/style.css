@@ -954,6 +954,121 @@ Predestined Section
 
 
 
+/* Registration Section */
+.registration-sec {
+    padding: 135px 0;
+}
+
+
+.registration-sec .form-img {
+    max-width: 696px;
+}
+
+.registration-sec .form-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.register-head .sub-title {
+    margin: 0;
+}
+
+.register-head .sub-title span {
+    padding: 7px 42px;
+    font-size: 18px;
+}
+
+.register-head .title-2 {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    color: var(--primary-color);
+    font-family: var(--arlita-font);
+}
+
+.register-head .title-2 span {
+    font-size: 200px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    font-family: var(--ClashGrotest);
+}
+
+.register-head p {
+    max-width: 527px;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--text-color);
+    letter-spacing: -0.6px;
+    font-family: var(--ClashGrotest);
+}
+
+.uerInput {
+    padding: 12px 44px 64px;
+    border-radius: 50px;
+    border: 2px solid #27220D;
+    margin-top: 67px;
+    background: var(--bg-body);
+}
+
+.registration-sec .uerInput img {
+    width: 206px;
+    height: 35px;
+    object-fit: cover;
+    margin-bottom: 13px;
+    mix-blend-mode: plus-lighter;
+}
+
+.form-head {
+    text-align: center;
+}
+
+
+.form-head p {
+    max-width: 435px;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 37px;
+    color: var(--text-color);
+    font-family: var(--arlita-font);
+}
+
+.form-head p span {
+    color: var(--primary-color);
+}
+
+.uerInput label {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: var(--text-color);
+    font-family: var(--ClashGrotest);
+}
+
+.uerInput input {
+    margin-bottom: 31px;
+    width: 100%;
+    background: transparent;
+    border-radius: 16px;
+    border: 1px solid rgba(221, 202, 103, 50%);
+    outline: none;
+    padding: 22px 20px;
+    transition: 0.35s;
+    cursor: pointer;
+}
+
+.uerInput input:hover {
+    box-shadow: 0 0px 24px #ddca6769
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    font-family: var(--ClashGrotest);
+}
 
 /* 
 ###########################################
