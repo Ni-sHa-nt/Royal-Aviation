@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Royal-Aviation</title>
+    <!-- locomotive CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Our Services CSS -->
+    <link rel="stylesheet" href="./css/our-services.css">
+
+    <link rel="icon" type="image/png" href="./assets/nav-logo.png">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header-sec">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <div class="nav-logo">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/nav-logo.png" alt="">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-black" id="navbarSupportedContent">
+                    <!-- <div class="offcanvas-header d-block d-xl-none">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div> -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Our Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Aircraft Fleet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="nav-btn d-flex align-items-center">
+                        <a href="" class="search">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.75 25.6667C21.2269 25.6667 25.6667 21.2268 25.6667 15.75C25.6667 10.2732 21.2269 5.83333 15.75 5.83333C10.2732 5.83333 5.83337 10.2732 5.83337 15.75C5.83337 21.2268 10.2732 25.6667 15.75 25.6667Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M32.6667 32.6667L23.3334 23.3333" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </a>
+                        <a href="" class="user">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M29.1667 30.625V27.7083C29.1667 26.1612 28.5521 24.6775 27.4582 23.5835C26.3642 22.4896 24.8805 21.875 23.3334 21.875H11.6667C10.1196 21.875 8.63588 22.4896 7.54192 23.5835C6.44796 24.6775 5.83337 26.1612 5.83337 27.7083V30.625"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M17.5 16.0417C20.7216 16.0417 23.3333 13.43 23.3333 10.2083C23.3333 6.98667 20.7216 4.375 17.5 4.375C14.2783 4.375 11.6666 6.98667 11.6666 10.2083C11.6666 13.43 14.2783 16.0417 17.5 16.0417Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Our Services Banner Section -->
+        <section class="banner-sec services-banner text-white d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="banner-wrapper">
+                    <h1 class="title-1">From Business Trips to Luxury Escapes – We’ve Got You Covered.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur. Tellus nulla suspendisse est odio orci convallis nibh
+                        vitae venenatis. Lorem
+                        nisl dui convallis praesent.</p>
+                    <div class="banner-btn">
+                        <a href="" class="primary-btn">
+                            <span>Book Your Flight
+                                <svg width="26" height="19" viewBox="0 0 26 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.4141 16.8359C24.7266 16.8359 25.0391 17.1484 25.0391 17.4609V18.0859C25.0391 18.4375 24.7266 18.7109 24.4141 18.7109H0.664062C0.3125 18.7109 0.0390625 18.4375 0.0390625 18.0859V17.4609C0.0390625 17.1484 0.3125 16.8359 0.664062 16.8359H24.4141ZM2.92969 13.0859L0.507812 10.3125C0.195312 10 0 9.57031 0 9.10156C0 8.98438 0.0390625 8.86719 0.0390625 8.75C0.15625 8.16406 0.507812 7.69531 1.01562 7.42188L1.64062 7.10938C1.91406 6.95312 2.22656 6.875 2.53906 6.875C2.85156 6.875 3.125 6.95312 3.39844 7.10938L5.54688 8.20312L8.16406 6.83594H8.20312H8.16406L4.10156 4.17969C3.59375 3.82812 3.28125 3.24219 3.28125 2.57812C3.28125 1.875 3.67188 1.25 4.25781 0.9375L5.66406 0.195312C5.9375 0.078125 6.21094 0 6.5625 0C6.79688 0 7.03125 0.0390625 7.22656 0.117188L15.0781 3.16406H15.1172L18.5547 1.32812C19.6094 0.78125 20.7031 0.507812 21.7578 0.507812C21.875 0.507812 21.9922 0.507812 22.1094 0.507812C23.4766 0.625 24.4141 1.09375 24.8047 1.95312C25.1953 2.8125 25.0391 3.86719 24.2969 5.07812C23.6328 6.09375 22.6953 6.95312 21.5234 7.57812L10.5859 13.3594C10.1562 13.5938 9.6875 13.7109 9.21875 13.7109H4.33594C3.78906 13.7109 3.28125 13.4766 2.92969 13.0859ZM2.53906 8.75L1.91406 9.10156L4.33594 11.8359H9.17969C9.375 11.8359 9.53125 11.7969 9.6875 11.7188L20.6641 5.9375C21.5234 5.46875 22.2266 4.84375 22.6953 4.10156C23.125 3.35938 23.2031 2.92969 23.125 2.73438C23.0469 2.57812 22.5781 2.42188 21.9922 2.38281C21.9141 2.38281 21.8359 2.38281 21.7578 2.38281C21.0156 2.38281 20.2344 2.57812 19.4531 3.00781L15.1953 5.23438L6.5625 1.83594L5.15625 2.57812L11.875 6.99219L5.54688 10.3516L2.53906 8.75Z"
+                                        fill="#DBC761" fill-opacity="0.79" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+        <section class="service-sec">
+            <div class="container">
+                <!-- <div class="section-head">
+                    <div class="left-line">
+                        <img src="./assets/left-line.png" alt="">
+                    </div>
+                    <div class="sub-title btn-border">
+                        <span>services</span>
+                    </div>
+                    <div class="right-line">
+                        <img src="./assets/right-line.png" alt="">
+                    </div>
+                </div> -->
+                <div class="main-head">
+                    <h2 class="title-2">The real alternative to owning
+                        <span>aircraft</span>
+                    </h2>
+                    <p class="main-head-para">Enjoy all the benefits of a personal jet without the responsibilities that
+                        come with owning
+                        VistaJet's pioneering Program membership is an efficient and value driven flying solution for
+                        corporate leaders and
+                        private individuals, involving no depreciation and no asset risk. The model offers guaranteed
+                        availability with as
+                        little as 24 hours’ notice, globally, on a consistent branded fleet, all at a fixed hourly rate.
+                    </p>
+                </div>
+                <div class="service-card rounded-5 st">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 mb-5 mb-sm-5">
+                            <!-- <div class="btn-border">
+                                <span>business</span>
+                            </div> -->
+                            <h3 class="title-3"><span>business</span> jet charter</h3>
+                            <p>Aircraft ownership doesn’t have to be complex or daunting. Choosing a JetSetGo Aircraft
+                                Management Service takes away
+                                the stress and the burden of owning and operating an aircraft, leaving you free to
+                                concentrate on your business or
+                                lifestyle whilst we take care of the day-to-day business of operating and maintaining
+                                your aircraft.</p>
+                            <a href="" class="secondary-btn">
+                                <span>explore now
+                                    <svg width="26" height="19" viewBox="0 0 26 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.4141 16.8359C24.7266 16.8359 25.0391 17.1484 25.0391 17.4609V18.0859C25.0391 18.4375 24.7266 18.7109 24.4141 18.7109H0.664062C0.3125 18.7109 0.0390625 18.4375 0.0390625 18.0859V17.4609C0.0390625 17.1484 0.3125 16.8359 0.664062 16.8359H24.4141ZM2.92969 13.0859L0.507812 10.3125C0.195312 10 0 9.57031 0 9.10156C0 8.98438 0.0390625 8.86719 0.0390625 8.75C0.15625 8.16406 0.507812 7.69531 1.01562 7.42188L1.64062 7.10938C1.91406 6.95312 2.22656 6.875 2.53906 6.875C2.85156 6.875 3.125 6.95312 3.39844 7.10938L5.54688 8.20312L8.16406 6.83594H8.20312H8.16406L4.10156 4.17969C3.59375 3.82812 3.28125 3.24219 3.28125 2.57812C3.28125 1.875 3.67188 1.25 4.25781 0.9375L5.66406 0.195312C5.9375 0.078125 6.21094 0 6.5625 0C6.79688 0 7.03125 0.0390625 7.22656 0.117188L15.0781 3.16406H15.1172L18.5547 1.32812C19.6094 0.78125 20.7031 0.507812 21.7578 0.507812C21.875 0.507812 21.9922 0.507812 22.1094 0.507812C23.4766 0.625 24.4141 1.09375 24.8047 1.95312C25.1953 2.8125 25.0391 3.86719 24.2969 5.07812C23.6328 6.09375 22.6953 6.95312 21.5234 7.57812L10.5859 13.3594C10.1562 13.5938 9.6875 13.7109 9.21875 13.7109H4.33594C3.78906 13.7109 3.28125 13.4766 2.92969 13.0859ZM2.53906 8.75L1.91406 9.10156L4.33594 11.8359H9.17969C9.375 11.8359 9.53125 11.7969 9.6875 11.7188L20.6641 5.9375C21.5234 5.46875 22.2266 4.84375 22.6953 4.10156C23.125 3.35938 23.2031 2.92969 23.125 2.73438C23.0469 2.57812 22.5781 2.42188 21.9922 2.38281C21.9141 2.38281 21.8359 2.38281 21.7578 2.38281C21.0156 2.38281 20.2344 2.57812 19.4531 3.00781L15.1953 5.23438L6.5625 1.83594L5.15625 2.57812L11.875 6.99219L5.54688 10.3516L2.53906 8.75Z"
+                                            fill="#DBC761" fill-opacity="0.79" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="service-card-img">
+                                <img src="./assets/service-card-img-01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card rounded-5">
+                    <div class="row align-items-center flex-lg-row-reverse">
+                        <div class="col-12 col-lg-6 mb-5 mb-sm-5">
+                            <!-- <div class="btn-border">
+                                <span>ambulance</span>
+                            </div> -->
+                            <h3 class="title-3 text-xl-end"><span>air</span> ambulance</h3>
+                            <p class="text-xl-end">Aircraft ownership doesn’t have to be complex or daunting. Choosing a
+                                JetSetGo Aircraft Management Service takes away
+                                the stress and the burden of owning and operating an aircraft, leaving you free to
+                                concentrate on your business or
+                                lifestyle whilst we take care of the day-to-day business of operating and maintaining
+                                your aircraft.</p>
+                            <a href="" class="secondary-btn d-flex ms-lg-auto">
+                                <span>explore now
+                                    <svg width="26" height="19" viewBox="0 0 26 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.4141 16.8359C24.7266 16.8359 25.0391 17.1484 25.0391 17.4609V18.0859C25.0391 18.4375 24.7266 18.7109 24.4141 18.7109H0.664062C0.3125 18.7109 0.0390625 18.4375 0.0390625 18.0859V17.4609C0.0390625 17.1484 0.3125 16.8359 0.664062 16.8359H24.4141ZM2.92969 13.0859L0.507812 10.3125C0.195312 10 0 9.57031 0 9.10156C0 8.98438 0.0390625 8.86719 0.0390625 8.75C0.15625 8.16406 0.507812 7.69531 1.01562 7.42188L1.64062 7.10938C1.91406 6.95312 2.22656 6.875 2.53906 6.875C2.85156 6.875 3.125 6.95312 3.39844 7.10938L5.54688 8.20312L8.16406 6.83594H8.20312H8.16406L4.10156 4.17969C3.59375 3.82812 3.28125 3.24219 3.28125 2.57812C3.28125 1.875 3.67188 1.25 4.25781 0.9375L5.66406 0.195312C5.9375 0.078125 6.21094 0 6.5625 0C6.79688 0 7.03125 0.0390625 7.22656 0.117188L15.0781 3.16406H15.1172L18.5547 1.32812C19.6094 0.78125 20.7031 0.507812 21.7578 0.507812C21.875 0.507812 21.9922 0.507812 22.1094 0.507812C23.4766 0.625 24.4141 1.09375 24.8047 1.95312C25.1953 2.8125 25.0391 3.86719 24.2969 5.07812C23.6328 6.09375 22.6953 6.95312 21.5234 7.57812L10.5859 13.3594C10.1562 13.5938 9.6875 13.7109 9.21875 13.7109H4.33594C3.78906 13.7109 3.28125 13.4766 2.92969 13.0859ZM2.53906 8.75L1.91406 9.10156L4.33594 11.8359H9.17969C9.375 11.8359 9.53125 11.7969 9.6875 11.7188L20.6641 5.9375C21.5234 5.46875 22.2266 4.84375 22.6953 4.10156C23.125 3.35938 23.2031 2.92969 23.125 2.73438C23.0469 2.57812 22.5781 2.42188 21.9922 2.38281C21.9141 2.38281 21.8359 2.38281 21.7578 2.38281C21.0156 2.38281 20.2344 2.57812 19.4531 3.00781L15.1953 5.23438L6.5625 1.83594L5.15625 2.57812L11.875 6.99219L5.54688 10.3516L2.53906 8.75Z"
+                                            fill="#DBC761" fill-opacity="0.79" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="service-card-img">
+                                <img src="./assets/service-card-img-02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card rounded-5">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 mb-5 mb-sm-5">
+                            <!-- <div class="btn-border">
+                                <span>delight</span>
+                            </div> -->
+                            <h3 class="title-3"><span>delight</span> vacation</h3>
+                            <p>Aircraft ownership doesn’t have to be complex or daunting. Choosing a JetSetGo Aircraft
+                                Management Service takes away
+                                the stress and the burden of owning and operating an aircraft, leaving you free to
+                                concentrate on your business or
+                                lifestyle whilst we take care of the day-to-day business of operating and maintaining
+                                your aircraft.</p>
+                            <a href="" class="secondary-btn">
+                                <span>explore now
+                                    <svg width="26" height="19" viewBox="0 0 26 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.4141 16.8359C24.7266 16.8359 25.0391 17.1484 25.0391 17.4609V18.0859C25.0391 18.4375 24.7266 18.7109 24.4141 18.7109H0.664062C0.3125 18.7109 0.0390625 18.4375 0.0390625 18.0859V17.4609C0.0390625 17.1484 0.3125 16.8359 0.664062 16.8359H24.4141ZM2.92969 13.0859L0.507812 10.3125C0.195312 10 0 9.57031 0 9.10156C0 8.98438 0.0390625 8.86719 0.0390625 8.75C0.15625 8.16406 0.507812 7.69531 1.01562 7.42188L1.64062 7.10938C1.91406 6.95312 2.22656 6.875 2.53906 6.875C2.85156 6.875 3.125 6.95312 3.39844 7.10938L5.54688 8.20312L8.16406 6.83594H8.20312H8.16406L4.10156 4.17969C3.59375 3.82812 3.28125 3.24219 3.28125 2.57812C3.28125 1.875 3.67188 1.25 4.25781 0.9375L5.66406 0.195312C5.9375 0.078125 6.21094 0 6.5625 0C6.79688 0 7.03125 0.0390625 7.22656 0.117188L15.0781 3.16406H15.1172L18.5547 1.32812C19.6094 0.78125 20.7031 0.507812 21.7578 0.507812C21.875 0.507812 21.9922 0.507812 22.1094 0.507812C23.4766 0.625 24.4141 1.09375 24.8047 1.95312C25.1953 2.8125 25.0391 3.86719 24.2969 5.07812C23.6328 6.09375 22.6953 6.95312 21.5234 7.57812L10.5859 13.3594C10.1562 13.5938 9.6875 13.7109 9.21875 13.7109H4.33594C3.78906 13.7109 3.28125 13.4766 2.92969 13.0859ZM2.53906 8.75L1.91406 9.10156L4.33594 11.8359H9.17969C9.375 11.8359 9.53125 11.7969 9.6875 11.7188L20.6641 5.9375C21.5234 5.46875 22.2266 4.84375 22.6953 4.10156C23.125 3.35938 23.2031 2.92969 23.125 2.73438C23.0469 2.57812 22.5781 2.42188 21.9922 2.38281C21.9141 2.38281 21.8359 2.38281 21.7578 2.38281C21.0156 2.38281 20.2344 2.57812 19.4531 3.00781L15.1953 5.23438L6.5625 1.83594L5.15625 2.57812L11.875 6.99219L5.54688 10.3516L2.53906 8.75Z"
+                                            fill="#DBC761" fill-opacity="0.79" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="service-card-img">
+                                <img src="./assets/service-card-img-03.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aviation Membership Plans Section -->
+        <!-- <section class="membership-sec">
+            <div class="container">
+                <div class="main-head">
+                    <h2 class="title-2">The real alternative to owning
+                        <span>aircraft</span>
+                    </h2>
+                    <p class="main-head-para">Choose the right membership for you based on the hours your fly, or
+                        whether you are looking for a corporate or personal
+                        solution.
+                    </p>
+                </div>
+
+                <div class="membership-wrapper">
+                    <div class="membership-head">
+                        <div class="row text-center">
+                            <div class="col-3 text-start">
+                                <p>benifits</p>
+                            </div>
+                            <div class="col-3">
+                                <p>air ambulance</p>
+                            </div>
+                            <div class="col-3">
+                                <p>delight</p>
+                            </div>
+                            <div class="col-3">
+                                <p>business jet charter</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="membership-data">
+                        <div class="row text-center">
+                            <div class="col-3 text-start">
+                                <p>Flying hours per years</p>
+                            </div>
+                            <div class="col-3">
+                                <p>25+</p>
+                            </div>
+                            <div class="col-3">
+                                <p>50+</p>
+                            </div>
+                            <div class="col-3">
+                                <p>unlimited</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="membership-data">
+                        <div class="row text-center">
+                            <div class="col-3 text-start">
+                                <p>Guaranteed flight</p>
+                            </div>
+                            <div class="col-3">
+                                <p>non peak</p>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="membership-data">
+                        <div class="row text-center">
+                            <div class="col-3 text-start">
+                                <p>No upfront investment</p>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="membership-data">
+                        <div class="row text-center">
+                            <div class="col-3 text-start">
+                                <p>Fixed hourly rate</p>
+                            </div>
+                            <div class="col-3">
+                                <p>non peak</p>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="membership-data">
+                        <div class="row text-center align-items-center">
+                            <div class="col-3 text-start">
+                                <p>No intracontinental flights fees (EU, U.S.)</p>
+                            </div>
+                            <div class="col-3">
+                                <p>non peak</p>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="membership-data">
+                        <div class="row text-center">
+                            <div class="col-3 text-start">
+                                <p>private dining</p>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="membership-data">
+                        <div class="row text-center">
+                            <div class="col-3 text-start">
+                                <p>Personal team 24/7</p>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="col-3 d-flex align-content-center justify-content-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="last-para">*subject to availabaility</p>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-sec">
+        <div class="container">
+            <div class="row align-items-stretch g-5">
+                <div class="col-12 col-xl-4 col-lg-6 col-md-12">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="./assets/nav-logo.png" alt="">
+                        </a>
+                    </div>
+                    <p class="company-about-para">royal aviation, a trusted choice for those valuing time, service, and
+                        reliability Explore unique
+                        features to customize
+                        your private flying experience your way</p>
+                    <ul class="footer-contact">
+                        <li class="d-flex align-items-center">
+                            <span>
+                                <img src="./assets/contanct-icon.png" alt="">
+                            </span>
+                            <a href="">IN +91-11-40689002</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-xl-2 col-lg-3 col-md-6">
+                    <div class="links">
+                        <ul class="our-service-list">
+                            <li>
+                                <a href="">Our product</a>
+                            </li>
+                            <li>
+                                <a href="">Our Service</a>
+                            </li>
+                            <li>
+                                <a href="">Membership</a>
+                            </li>
+                            <li>
+                                <a href="">Our fleet</a>
+                            </li>
+                            <li>
+                                <a href="">Airports</a>
+                            </li>
+                            <li>
+                                <a href="">About us</a>
+                            </li>
+                            <li>
+                                <a href="">E-book</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-2 col-lg-3 col-md-6">
+                    <div class="links">
+                        <ul class="our-service-list">
+                            <li>
+                                <a href="">Blogs</a>
+                            </li>
+                            <li>
+                                <a href="">Career</a>
+                            </li>
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="">Terms & condition</a>
+                            </li>
+                            <li>
+                                <a href="">News & media</a>
+                            </li>
+                            <li>
+                                <a href="">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-lg-6 col-md-12">
+                    <div class="latest-update-wrapper">
+                        <p>Get the latest Update</p>
+                        <div class="subscribe-box">
+                            <form action="">
+                                <input type="email" placeholder="Enter Your Email" id="email">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                        <ul class="social-media-links">
+                            <li class="social-media-list">
+                                <a href=""><img src="./assets/twitter-icon.png" alt=""></a>
+                            </li>
+                            <li class="social-media-list">
+                                <a href=""><img src="./assets/insta-icon.png" alt=""></a>
+                            </li>
+                            <li class="social-media-list">
+                                <a href=""><img src="./assets/fb-icon.png" alt=""></a>
+                            </li>
+                            <li class="social-media-list">
+                                <a href=""><img src="./assets/YouTube Studio-icon.png" alt=""></a>
+                            </li>
+                        </ul>
+                        <div class="country-links">
+                            <ul class="d-flex align-items-center justify-content-end">
+                                <li>
+                                    <a href="">Delhi</a>
+                                </li>
+                                <li class="divider">
+                                    <a href="">Mumbai</a>
+                                </li>
+                                <li class="divider">
+                                    <a href="">Bengaluru</a>
+                                </li>
+                                <li class="divider">
+                                    <a href="">Dubai</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="copy-right-content">
+                <p>© 2014-2024 All right reserved by <a href="index.html">Royal Aviation</a> Services Private Limited
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- locomotive js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- Js -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

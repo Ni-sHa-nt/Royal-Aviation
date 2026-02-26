@@ -682,7 +682,7 @@ Service Section
 
 .service-card {
     position: sticky;
-    top: 50px;
+    top: 130px;
 }
 
 .service-card::before {
@@ -1058,6 +1058,7 @@ Predestined Section
     padding: 22px 20px;
     transition: 0.35s;
     cursor: pointer;
+    color: white;
 }
 
 .userInput input:hover {
@@ -1451,7 +1452,6 @@ Media Queries
     }
 }
 
-
 @media screen and (max-width:992px) {
 
     /* Perfect Day Section */
@@ -1705,6 +1705,10 @@ Media Queries
         width: 53px;
     }
 
+    .service-card {
+        top: 95px;
+    }
+
 
 
 
@@ -1846,6 +1850,12 @@ Media Queries
 
 @media screen and (max-width: 490px) {
 
+    /* Banner Section */
+    .banner-sec {
+        min-height: 80vh;
+    }
+
+
     /* Dream Come Section */
     .card {
         width: 295px;
@@ -1911,7 +1921,6 @@ Media Queries
         margin-top: 28px;
     }
 }
-
 
 @media screen and (max-width:425px) {
 
