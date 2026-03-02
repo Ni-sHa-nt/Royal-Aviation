@@ -68,59 +68,6 @@ Aviation Membership Plans Section
     max-width: 585px;
 }
 
-/* .membership-head {
-    padding: 35px 58px;
-}
-
-.membership-head p {
-    font-size: 24px;
-    font-weight: 400;
-    color: var(--text-color);
-    text-transform: capitalize;
-    font-family: ClashGrotesk-Variable;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 6px;
-}
-
-.membership-head p::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: rgba(221, 202, 103, 57%);
-    left: 0;
-    bottom: 0;
-    position: absolute;
-}
-
-.membership-data {
-    border: 1px solid rgba(221, 202, 103, 57%);
-    padding: 35px 58px;
-    border-radius: 50px;
-    margin-bottom: 35px;
-}
-
-.membership-data p {
-    font-size: 24px;
-    font-weight: 400;
-    color: var(--text-color);
-    text-transform: capitalize;
-    font-family: ClashGrotesk-Variable;
-    margin: 0;
-}
-
-.membership-data i {
-    font-size: 25px;
-    color: white;
-}
-
-
-.membership-wrapper .last-para {
-    margin-left: 58px;
-    color: white;
-    text-transform: capitalize;
-} */
-
 .membership-table {
     width: 100%;
     border-collapse: separate;
