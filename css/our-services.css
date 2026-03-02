@@ -68,7 +68,7 @@ Aviation Membership Plans Section
     max-width: 585px;
 }
 
-.membership-head {
+/* .membership-head {
     padding: 35px 58px;
 }
 
@@ -109,19 +109,90 @@ Aviation Membership Plans Section
     margin: 0;
 }
 
-.membership-data i{
+.membership-data i {
     font-size: 25px;
     color: white;
 }
 
 
-.membership-wrapper .last-para{
+.membership-wrapper .last-para {
+    margin-left: 58px;
+    color: white;
+    text-transform: capitalize;
+} */
+
+.membership-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 35px;
+}
+
+.membership-table thead th {
+    padding: 35px 58px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-family: ClashGrotesk-Variable;
+    text-align: center;
+}
+
+.membership-table thead th span {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.membership-table thead th span::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(221, 202, 103, 57%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.membership-table tbody tr {
+    background: #080806;
+    border: 1px solid rgba(221, 202, 103, 57%);
+}
+
+.membership-table tbody td {
+    padding: 35px 58px;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-family: ClashGrotesk-Variable;
+    text-align: center;
+    border-top: 1px solid rgba(221, 202, 103, 57%);
+    border-bottom: 1px solid rgba(221, 202, 103, 57%);
+}
+
+.membership-table tbody tr td:first-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    /* text-align: left; */
+    border-left: 1px solid rgba(221, 202, 103, 57%);
+}
+
+.membership-table tbody tr td:last-child {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-right: 1px solid rgba(221, 202, 103, 57%);
+}
+
+.membership-table i {
+    font-size: 25px;
+    color: white;
+}
+
+.last-para {
     margin-left: 58px;
     color: white;
     text-transform: capitalize;
 }
-
-
 
 
 
@@ -130,12 +201,61 @@ Aviation Membership Plans Section
 Media Queries
 ###########################################
  */
+@media screen and (max-width:1400px) {
+
+    /* Aviation Membership Plans Section */
+    .membership-table thead th {
+        font-size: 20px;
+    }
+
+    .membership-table tbody td {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    /* Aviation Membership Plans Section */
+    .membership-sec .main-head {
+        margin: 25px 0 40px;
+    }
+
+    .membership-table thead th {
+        font-size: 18px;
+        padding: 35px 35px;
+    }
+
+    .membership-table tbody td {
+        font-size: 18px;
+        padding: 35px 35px;
+    }
+
+    .last-para {
+        margin-left: 38px;
+        font-size: 12px;
+    }
+}
 
 @media screen and (max-width:768px) {
 
     /* Our Services Banner Section */
     .services-banner .title-1 {
         font-size: 50px;
+    }
+
+    /* Aviation Membership Plans Section */
+    .membership-table thead th {
+        font-size: 14px;
+        padding: 20px 18px;
+    }
+
+    .membership-table tbody td {
+        font-size: 14px;
+        padding: 20px 18px;
+    }
+
+    .membership-table i {
+        font-size: 20px;
     }
 }
 
@@ -145,6 +265,21 @@ Media Queries
     .services-banner p {
         font-size: 18px;
     }
+
+    /* Aviation Membership Plans Section */
+    .membership-table thead th {
+        font-size: 12px;
+        padding: 20px 18px;
+    }
+
+    .membership-table tbody td {
+        font-size: 12px;
+        padding: 20px 18px;
+    }
+
+    .membership-table i {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 490px) {
@@ -152,6 +287,15 @@ Media Queries
     /* Our Services Banner Section */
     .services-banner .title-1 {
         font-size: 40px;
+    }
+
+    /* Aviation Membership Plans Section */
+    .membership-sec {
+        padding-bottom: 50px;
+    }
+
+    .membership-table {
+        border-spacing: 0 18px;
     }
 }
 
@@ -164,5 +308,25 @@ Media Queries
 
     .services-banner p {
         font-size: 14px;
+    }
+
+    /* Aviation Membership Plans Section */
+    .membership-table thead th {
+        font-size: 10px;
+        padding: 12px 12px;
+    }
+
+    .membership-table tbody td {
+        font-size: 10px;
+        padding: 18px 12px;
+    }
+
+    .membership-table i {
+        font-size: 10px;
+    }
+
+    .last-para {
+        margin-left: 28px;
+        font-size: 10px;
     }
 }
